@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Log In</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="container">
+      <div
+        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+      >
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        >
+          <img
+            src="./images/spicy-lemon.jpg"
+            alt="Spicy lemon logo"
+            class="bi me-2"
+            width="50"
+          />
+          <span class="fs-4">Spicy Lemon</span>
+        </a>
+        <nav>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a href="login.html" class="nav-link text-danger"> Log In </a>
+            </li>
+            <li class="nav-item">
+              <a href="signup.html" class="nav-link text-danger"> Sign Up </a>
+            </li>
+            <li class="nav-item">
+              <a href="booking.html" class="nav-link text-danger">
+                Book a Table
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <h1>Sign Up</h1>
+      <div class="row">
+        <div class="col-8">
+          <form action="./index.html" method="GET">
+            <div class="row mb-3">
+              <label for="firstname" class="col-sm-4 col-form-label">
+                First Name
+              </label>
+              <div class="col-sm-8">
+                <input
+                  type="text"
+                  name="firstname"
+                  id="firstname"
+                  class="form-control"
+                  minlength="3"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="lastname" class="col-sm-4 col-form-label">
+                Last Name
+              </label>
+              <div class="col-sm-8">
+                <input
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  class="form-control"
+                  minlength="3"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="email" class="col-sm-4 col-form-label"> Email </label>
+              <div class="col-sm-8">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="username" class="col-sm-4 col-form-label">
+                Username
+              </label>
+              <div class="col-sm-8">
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  class="form-control"
+                  minlength="3"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="password" class="col-sm-4 col-form-label">
+                Password
+              </label>
+              <div class="col-sm-8">
+                <div class="input-group">
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    class="form-control"
+                    minlength="7"
+                    required
+                  />
+                  <span id="show" class="input-group-text">SHOW</span>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="confirm_password" class="col-sm-4 col-form-label">
+                Confirm Password
+              </label>
+              <div class="col-sm-8">
+                <input
+                  type="password"
+                  name="confirm_password"
+                  id="confirm_password"
+                  class="form-control"
+                  minlength="7"
+                  required
+                />
+              </div>
+              <p id="error_msg" class="text-danger text-center"></p>
+            </div>
+            <button type="submit" class="btn btn-danger">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="js/validation.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
