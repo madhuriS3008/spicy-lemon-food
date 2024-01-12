@@ -94,26 +94,24 @@
             </div>
             <div class="row">
               <div class="col-4">
-                <label> Location </label>
+                <label id="location"> Location </label>
               </div>
               <div class="col-8">
-                <fieldset id="location">
-                  <input
-                    type="radio"
-                    value="indoor"
-                    name="location"
-                    class="form-check-input"
-                    checked
-                  />
-                  Indoor
-                  <input
-                    type="radio"
-                    value="outdoor"
-                    name="location"
-                    class="form-check-input"
-                  />
-                  Outdoor
-                </fieldset>
+                <input
+                  type="radio"
+                  value="indoor"
+                  name="location"
+                  class="form-check-input"
+                  checked
+                />
+                Indoor
+                <input
+                  type="radio"
+                  value="outdoor"
+                  name="location"
+                  class="form-check-input"
+                />
+                Outdoor
               </div>
             </div>
             <button type="submit" class="btn btn-primary">Book</button>
@@ -121,7 +119,7 @@
         </div>
       </div>
     </main>
-    <footer>
+    <footer class="position-absolute bottom-0 start-50">
       <p class="text-center text-secondary">Copright belong to Spicy Lemon</p>
     </footer>
     <script
