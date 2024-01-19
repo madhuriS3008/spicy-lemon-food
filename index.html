@@ -149,7 +149,9 @@
       <form>
         <div class="row mb-4">
           <div class="col-4">
-            <label for="rating" class="px-4">Rating</label>
+            <label for="rating" class="px-4"
+              >Rating<sup style="color: red">*</sup></label
+            >
             <input
               type="range"
               min="1"
@@ -159,6 +161,7 @@
               list="ratings"
               value="5"
               class="me-4"
+              required
             />
             <datalist id="ratings">
               <option value="1" label="1"></option>
