@@ -5,7 +5,7 @@ function changeHandler() {
   stars.innerHTML = "";
   for (let i = 1; i <= rating.value; i++) {
     let node = document.createElement("li");
-    node.classList.add("fa-solid", "fa-star");
+    node.classList.add("fa-solid", "fa-star", "px-1");
     stars.appendChild(node);
   }
 }

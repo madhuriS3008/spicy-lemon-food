@@ -54,13 +54,15 @@
       </div>
     </header>
     <main class="container">
-      <h1 class="text-success">Book a Table</h1>
+      <h1 class="text-success">Book a Table<sup style="color: red">*</sup></h1>
       <div class="row">
         <div class="col-8">
           <form action="./index.html" method="GET">
             <div class="row">
               <div class="col-4">
-                <label for="booking_date">Booking Date</label>
+                <label for="booking_date"
+                  >Booking Date<sup style="color: red">*</sup></label
+                >
               </div>
               <div class="col-8">
                 <input
@@ -74,7 +76,9 @@
             </div>
             <div class="row">
               <div class="col-4">
-                <label for="booking_people">Number of people </label>
+                <label for="booking_people"
+                  >Number of people<sup style="color: red">*</sup>
+                </label>
               </div>
               <div class="col-7">
                 <input
@@ -114,7 +118,7 @@
                 Outdoor
               </div>
             </div>
-            <button type="submit" class="btn btn-primary">Book</button>
+            <button type="submit" class="btn btn-primary my-4">Book</button>
           </form>
         </div>
       </div>
